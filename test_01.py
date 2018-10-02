@@ -11,7 +11,7 @@ import os
 class OpenBrowser(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome(executable_path="chromedriver")
 
     def test_open_bing(self):
         "test description hongstarw"
