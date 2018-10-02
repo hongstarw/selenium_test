@@ -11,18 +11,16 @@ import os
 class OpenBrowser(unittest.TestCase):
 
     def setUp(self):
-        #self.driver = webdriver.Chrome()
-        pass
+        self.driver = webdriver.Chrome()
 
     def test_open_bing(self):
         "test description hongstarw"
-        #self.driver.get("https://cn.bing.com/")
+        self.driver.get("https://cn.bing.com/")
         time.sleep(5)
         assert "Bing" in ("Bing")
 
     def tearDown(self):
-        #self.driver.close()
-        pass
+        self.driver.close()
 
 
 
