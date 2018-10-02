@@ -7,7 +7,6 @@ from test_01 import OpenBrowser
 import HTMLTestRunner
 
 def suite():
-    print TestResult(verbosity=2)
     suite = TestSuite()
     suite.addTest(OpenBrowser('test_open_bing'))
     file = open("result.html","wb")
